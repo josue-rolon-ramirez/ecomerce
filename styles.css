@@ -1,0 +1,394 @@
+
+.kumbh-sans-bold{
+    font-family: "Kumbh Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+
+.contenedor-lista{
+    order: 2;
+
+}
+
+.contenedor-perfil{
+    order: 1;
+}
+
+.btn-nav{
+    background-color:#fff;
+    border: none;
+    padding: 0 15px;
+    
+}
+
+.imagen-avatar{
+    max-width: 100%;
+    height: 25px;
+    
+}
+
+.icono-cart{
+    max-width: 100%;
+    height: 20px;
+}
+
+ul{
+    list-style: none;
+}
+
+
+
+.carousel.ocultar-imagen-mobile{
+    display: none;
+}
+
+.carousel.activar-mobile{
+    display: flex;
+}
+
+.flecha-atras{
+    position: absolute;
+    left: 10px;
+    background-color: #fff;
+    padding: 16px;
+    border-radius: 100%;
+    
+}
+
+.flecha-avanzar{
+    position: absolute;
+    right: 10px;
+    background-color: #fff;
+    padding: 16px;
+    border-radius: 100%;
+    
+    
+}
+
+.texto-naranja{
+    text-transform: uppercase;
+    color: hsl(26, 100%, 55%);
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.titulo-producto{
+    font-size: 40px;
+}
+
+.texto-producto{
+    font-size: 16px;
+    color: hsl(220, 13%, 13%);
+    font-weight: 400;
+    font-family: "Kumbh Sans", sans-serif;
+}
+
+.precio-producto{
+    font-size: 26px;
+}
+
+
+.descuento{
+    background-color: hsl(26, 95%, 86%);
+    font-size: 16px;
+    text-transform: uppercase;
+    color: hsl(26, 100%, 55%);
+    font-weight: 700;
+    border-radius: 5px;
+}
+
+.precio-original{
+    font-size: 16px;
+    font-weight: 700;
+    color: rgb(182,186,196);
+}
+
+.boton-menos{
+    border: none;
+    background-color: #f7f8fd;
+}
+
+.boton-menos:hover{
+    border-radius: 5px;
+    background-color: hsl(219, 9%, 45%);
+}
+
+.boton-mas{
+    border: none;
+    background-color: #f7f8fd;
+}
+
+.boton-mas:hover{
+    border-radius: 5px;
+    background-color: hsl(219, 9%, 45%);
+}
+
+.seccion-cantidad{
+    border-radius: 10px;
+    background-color: #f7f8fd;
+}
+
+.boton-carrito{
+    border-radius: 10px;
+    color: #fff;
+    border: none;
+    background-color: hsl(26, 100%, 55%);;
+}
+
+div button .icono-cart{
+    color: #fff;
+}
+
+
+
+
+
+
+
+@media screen and (min-width:992px) {
+
+    .kumbh-sans-bold{
+        font-family: "Kumbh Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+      }
+
+    .navbar-estilos{
+        margin: auto;
+        width: 85%;
+        border-bottom: .5px solid #c8c8c8;
+    }
+    
+    .contenedor-lista{
+        order: 1;
+    }
+    
+    .contenedor-perfil{
+        order: 2;
+        
+    }
+    
+    .imagen-avatar{
+        max-width: 100%;
+        height: 50px;
+        
+    }
+
+    .btn-nav{
+        background-color:#fff;
+        border: none;
+        padding: 0 15px;
+        
+    }
+    
+    .icono-cart{
+        max-width: 100%;
+        height: 20px;
+    }
+
+    .imagen-principal{
+        cursor: pointer;
+        width: 100%;
+        height: auto;
+        border-radius: 5%;
+    }
+    
+
+    .popup{
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0);
+        width: 100%;
+        max-width: 1600px;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.75);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 5;
+        overflow: hidden;
+        transition: 1s;
+        opacity: 0;
+    }
+
+    .popup.activar{
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 1;
+    }
+
+    .icono-cerrar{
+      position: relative;
+      left: 235px;
+      width: 20px;
+      z-index: 200;
+      color: #fff;
+      opacity: 1;
+      cursor: pointer;
+    }
+
+    .image{
+        cursor: pointer;
+    }
+
+    .estilos-btn-cerrar{
+        position: relative;
+        top:-250px;
+        left: 250px;
+        z-index: 500;
+    }
+
+    
+.imagen-popup{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    max-width: 1600px;
+    max-height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    overflow: hidden;
+    transition: 1s;
+    opacity: 1;
+    border-radius: 20px;
+    width: 450px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    z-index: 150;
+    }
+
+     .flecha-atras-popup{
+        background-color: #fff;
+        border-radius: 100%;
+        padding: 16px;
+        z-index: 200;
+        cursor: pointer;
+        left: 15px;
+        order: 1;
+        position: relative;
+        
+     }
+
+     .flecha-avanzar-popup{
+        background-color: #fff;
+        border-radius: 100%;
+        padding: 16px;
+        z-index: 200;
+        cursor: pointer;
+        order: 2;
+        position: relative;
+        left: 412px;
+     }
+
+     .carousel-popup{
+        width: 450px;
+        position: relative;
+        right: 70px;
+        top: 320px;
+        z-index: 150;
+     }
+
+    
+
+    ul{
+        list-style: none;
+    }
+
+    .galeria-imagenes{
+        width: 80%;
+        height: auto;
+        border-radius: 5%;
+       
+    }
+
+    .borde-thumbnail.remover{
+        border: none;
+        opacity: 1;
+        background-color: none;
+    }
+    .borde-thumbnail.activo{
+        background: #fff;
+        opacity: .75;
+        border: hsl(26, 100%, 55%) 2px solid;
+    }
+
+    .borde-thumbnail:hover{
+        background: #fff;
+        opacity: .75;
+        border: hsl(26, 100%, 55%) 1px solid;
+    }
+
+    .texto-naranja{
+        font-size: 16px;
+        text-transform: uppercase;
+        color: hsl(26, 100%, 55%);
+        font-weight: 700;
+        letter-spacing: 1.5px;
+    }
+
+    .titulo-producto{
+        font-size: 40px;
+    }
+
+    .texto-producto{
+        font-size: 16px;
+        color: hsl(220, 13%, 13%);
+        font-weight: 400;
+        font-family: "Kumbh Sans", sans-serif;
+    }
+
+    .cantidad-producto{
+        font-size: 26px;
+    }
+
+    .descuento{
+        background-color: hsl(26, 95%, 86%);
+        font-size: 16px;
+        text-transform: uppercase;
+        color: hsl(26, 100%, 55%);
+        font-weight: 700;
+        border-radius: 5px;
+    }
+
+    .precio-original{
+        font-size: 16px;
+        font-weight: 700;
+        color: rgb(182,186,196);
+    }
+
+    .boton-menos{
+        border: none;
+        background-color: #f7f8fd;
+    }
+
+    .boton-menos:hover{
+        border-radius: 5px;
+        background-color: hsl(219, 9%, 45%);
+    }
+
+    .boton-mas{
+        border: none;
+        background-color: #f7f8fd;
+    }
+
+    .boton-mas:hover{
+        border-radius: 5px;
+        background-color: hsl(219, 9%, 45%);
+    }
+
+    .seccion-cantidad{
+        background-color: #f7f8fd;
+    }
+
+    }
+
+

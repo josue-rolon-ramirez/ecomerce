@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="estilos-carrito.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | E-commerce product page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <!--Navbar-->
+  <nav class="navbar navbar-expand-lg navbar-light py-4 navbar-estilos px-lg-0"> 
+    <div class="d-inline-flex" > 
+    <button class="navbar-toggler btn-nav"  type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="align-self-center d-flex"><img src="./images/icon-menu.svg" alt=""></span>
+    </button>
+      <span><a class="navbar-brand" href="#"><h2 class="kumbh-sans-bold mr-lg-4">sneakers</h2></a></span>
+    </div>
+
+    <div class="collapse navbar-collapse contenedor-lista" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item mr-lg-4">
+          <a class="nav-link" href="#">Collections</a>
+        </li>
+        <li class="nav-item mr-lg-4">
+          <a class="nav-link" href="#">Men</a>
+        </li>
+        <li class="nav-item mr-lg-4">
+          <a class="nav-link" href="#">Women</a>
+        </li>
+        <li class="nav-item mr-lg-4">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item mr-lg-4">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+    
+    
+
+    <div class="d-flex justify-content-end align-items-center contenedor-perfil">
+        
+        <div class="container-icon">
+          
+          <div class="container-products">
+
+          <div class="count-products">
+            <span id="contador-productos">0</span>
+          </div>
+      
+          <div class="container-cart-products hidden-cart">
+            <div class="row-product">
+              <div class="cart-product cart-empty">
+                <div class="info-cart-product">
+                                <span class="cantidad-producto-carrito" id="cantidad-producto-carrito"></span>
+                                <p class="titulo-producto-carrito" id="titulo-producto-carrito"></p>
+                                <span class="precio-producto-carrito" id="precio-producto-carrito"></span>
+                            </div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="icon-close"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              </div>
+              
+              
+
+            </div>
+              <div class="cart-total">
+                <h5>Total:</h5>
+                   <span class="total-pagar" id="total-pagar"></span>
+              </div>
+
+          </div>
+        
+      <img src="./images/icon-cart.svg" alt="icon-cart" class="icono-cart mr-lg-4 mr-3 container-cart-icon" style=" cursor: pointer; margin-top: 20px;">
+    </div> 
+  </div>
+      <div>
+      <img src="./images/image-avatar.png" class="imagen-avatar" alt="imagen-profile">
+    </div>
+    </div>
+ </nav>
+
+  <!--Carrito card-->
+  
+
+<!--fin de carrito card-->
+
+  <!--Fin de navbar-->
+
+ <!--Galeria de fotos-->
+    <div class="container" >
+      <div class="row">
+        <div class="col-lg-6 col-sm-12 px-0 px-lg-5 mt-lg-5" >
+          <div class="d-flex align-items-center" >
+            <img class="w-100 carousel imagen-primordial imagen-principal imageMobile inicio-image-mobile " src="images/image-product-1.jpg" alt="tennis-blancos">
+            <img class="w-100 carousel imageMobile ocultar-imagen-mobile" src="images/image-product-2.jpg" alt="tennis-blancos">
+            <img class="w-100 carousel imageMobile ocultar-imagen-mobile" src="images/image-product-3.jpg" alt="tennis-blancos">
+            <img class="w-100 carousel imageMobile ocultar-imagen-mobile" src="images/image-product-4.jpg" alt="tennis-blancos">
+            <img class="flecha-atras mx-1 d-lg-none" src="./images/icon-previous.svg" alt="">
+            <img class="flecha-avanzar mx-1 d-lg-none" src="./images/icon-next.svg" alt="">
+          </div>
+
+          
+        
+        <div class="popup">
+          <div class="estilos-btn-cerrar"><img class="icono-cerrar" src="./images/icon-close.svg" alt=""></div>  
+          <div class="d-lg-flex d-none align-items-center">
+            
+            <img class="flecha-atras-popup mx-1" src="./images/icon-previous.svg" alt="">
+            <img class="flecha-avanzar-popup mx-1" src="./images/icon-next.svg" alt="">
+            <img class="imagen-popup inicio-image" src="./images/image-product-1.jpg">
+            
+          </div>
+          
+          <div class="carousel-popup d-lg-block d-none mb-5">
+            <ul class="d-lg-flex d-none">
+              <li><img class="galeria-imagenes borde-thumbnail image" src="./images/image-product-1-thumbnail.jpg" alt=""></li>
+              <li><img class="galeria-imagenes borde-thumbnail image" src="./images/image-product-2-thumbnail.jpg" alt=""></li>
+              <li><img class="galeria-imagenes borde-thumbnail image" src="./images/image-product-3-thumbnail.jpg" alt=""></li>
+              <li><img class="galeria-imagenes borde-thumbnail image" src="./images/image-product-4-thumbnail.jpg" alt=""></li>
+            </ul>
+          </div>
+        </div>
+      
+
+          <div class="mt-lg-5 mb-lg-5 align-items-center">
+            <ul class="d-lg-flex d-none">
+              <li><img class="galeria-imagenes" src="./images/image-product-1-thumbnail.jpg" alt=""></li>
+              <li><img class="galeria-imagenes" src="./images/image-product-2-thumbnail.jpg" alt=""></li>
+              <li><img class="galeria-imagenes" src="./images/image-product-3-thumbnail.jpg" alt=""></li>
+              <li><img class="galeria-imagenes" src="./images/image-product-4-thumbnail.jpg" alt=""></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-6 col-sm-12 px-0 px-lg-5 mt-lg-5 mt-3 px-2 align-self-center container-items" >
+          <div class="col-12">
+            <span class="texto-naranja"><p class="kumbh-sans">sneakers company</p></span>
+            <h3 class="kumbh-sans-bold titulo-producto" id="titulo-producto">Fall Limited Edition Sneakers</h3>
+            <p class="texto-producto mt-lg-5 mb-lg-4">These low-profile sneakers are your perfect casual wear companion. Featuring a 
+              durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+
+              
+              <div class="d-flex d-lg-block ">
+              <div class="col-8 px-0 ">
+              <span class="d-flex align-items-center"><p class="kumbh-sans-bold precio-producto price" id="precio-producto">$125.00</p><p class="descuento d-inline px-2 mx-3">50%</p></span>
+              
+            </div>
+
+            <div class="col-4 px-0 d-flex align-items-center">
+            <p class="precio-original w-100 text-right text-lg-left kumbh-sans-bold"><s>$250.00</s></p>
+            </div>
+
+          </div>
+
+            <div class="d-lg-flex mt-lg-5">
+              <div class="col-lg-4 px-lg-0 d-flex justify-content-between seccion-cantidad mb-4 mb-lg-0">
+              <button class="px-3 py-2 boton-menos d-block"><img src="./images/icon-minus.svg" alt=""></button>
+              <span class="align-self-center kumbh-sans-bold px-3 py-2" id="cantidad">0</span>
+              <button class="px-3 py-2 boton-mas"><img src="./images/icon-plus.svg " alt=""></button>
+
+              
+              </div>
+
+              <div class="col-lg-10 w-100 d-inline-flex px-lg-4 px-0 mb-5 mb-lg-0">
+              <button class="w-100 ml-lg-3 boton-carrito py-3 btn-add-cart btn-agregar-carrito incremento" ><img src="./images/icon-cart-white.svg" alt="icon-cart" class="icono-cart mr-lg-4 mr-lg-3">
+                <span class="kumbh-sans-bold">Add to cart</span>
+                </button>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<!--Fin de galeria de fotos-->
+
+
+ 
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+  <script src="lightbox.js"></script>
+  <script src="carrito.js"></script>
+</body>
+</html>
+

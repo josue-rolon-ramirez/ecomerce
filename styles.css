@@ -203,7 +203,6 @@ div button .icono-cart{
         left: 50%;
         transform: translate(-50%, -50%) scale(0);
         width: 100%;
-        max-width: 1600px;
         height: 100%;
         background: rgba(0, 0, 0, 0.75);
         display: flex;
